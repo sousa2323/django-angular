@@ -11,7 +11,7 @@ export class MembersDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private api: ApiService) { }
   
-  selected_member = { name: '', surname: ''};
+  selected_member = { name: '', surname: '', id: '', phone: ''};
   selected_id;
 
   ngOnInit(): void {
@@ -32,6 +32,16 @@ export class MembersDetailComponent implements OnInit {
         console.log('Aconteceu um erro', error.message);
       }
     );
+  };
 
-  }
+  update(){
+    this.api.updateMember(this.selected_member).subscribe(
+      data => {
+        this.selected_member = data;
+      },
+      error => {
+        console.log('Aconteceu um erro', error.message);
+      }
+    );
+  };
 }
