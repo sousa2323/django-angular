@@ -11,7 +11,7 @@
 
 <p href="objetivo" align="center">🚀 Este pequeno projeto é uma aplicação que estou realizando durante o curso, se basea em criar APIs pelo Django Rest_Framework e consumi-lo com o Angular.</p>
 
-<h1>✅ Status do Projeto</h1>
+<h1 align="center">✅ Status do Projeto</h1>
 <h4 align="center"> 
 	🚧  React Select 🚀 Em construção...  🚧
 </h4>
