@@ -1,7 +1,3 @@
-<div align="center">
-<img src="https://img.shields.io/github/stars/sousa2323/django-angular/>
-
-</div>
 
 <h1 align="center">Django-Angular-Curso</h1>
 
