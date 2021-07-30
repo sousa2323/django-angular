@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://img.shields.io/github/stars/sousa2323/django-angular/label=Aplicação&message=Django-Angular&color=7159c1&style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/sousa2323/django-angular/v1?label=Aplicação&message=Django-Angular&color=7159c1&style=for-the-badge"/>
 
 </div>
 
