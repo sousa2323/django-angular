@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { ApiService } from './api.service';
 
 @Component({
@@ -9,7 +9,9 @@ import { ApiService } from './api.service';
 })
 export class MembersDetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private api: ApiService) { }
+  constructor(private route: ActivatedRoute, 
+    private api: ApiService,
+    private router: Router) { }
   
   selected_member = { name: '', surname: '', id: '', phone: ''};
   selected_id;
@@ -44,4 +46,8 @@ export class MembersDetailComponent implements OnInit {
       }
     );
   };
+
+  newMember(){
+    this.router.navigate(['new-member']);
+  }
 }
