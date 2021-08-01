@@ -13,9 +13,9 @@ export class AppComponent {
   selected_member = {id: 0, name: '', surname: '', phone: ''};
   
   members = [
-    {name: 'Member01', id: 1, surname: "Ciclano", phone: 1, photo: 'http://www.minhaapp.com/photo1'},
-    {name: 'Member02', id: 2, surname: "Ciclano2", phone: 1, photo: 'http://www.minhaapp.com/photo2'},
-    {name: 'Member03', id: 3, surname: "Ciclano3", phone: 1, photo: 'http://www.minhaapp.com/photo3'},
+    {name: 'Member01', id: 1, surname: "Ciclano", phone: '', photo: 'http://www.minhaapp.com/photo1'},
+    {name: 'Member02', id: 2, surname: "Ciclano2", phone: '',  photo: 'http://www.minhaapp.com/photo2'},
+    {name: 'Member03', id: 3, surname: "Ciclano3", phone: '', photo: 'http://www.minhaapp.com/photo3'},
   ];
 
   constructor(private api:ApiService, private router: Router) { 
