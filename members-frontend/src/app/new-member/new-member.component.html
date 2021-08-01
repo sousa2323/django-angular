@@ -1,8 +1,12 @@
 <h1>Novo Membro</h1>
 
+<label for="">Nome</label>
+<input type="text" [(ngModel)]="member.name" placeholder="Nome"><br>
 
+<label for="">Sobrenome</label>
+<input type="text" [(ngModel)]="member.surname" placeholder="Sobrenome"><br>
 
-<input type="text" [(ngModel)]="member.name">
-<input type="text" [(ngModel)]="member.surname">
-<input type="text" [(ngModel)]="member.phone">
-<button (click)="save()">Save Member</button>
+<label for="">Telefone</label>
+<input type="text" [(ngModel)]="member.phone" placeholder="Telefone"><br>
+
+<button (click)="save()" class="button primary">Save Member</button>

@@ -21,4 +21,9 @@ export class ApiService {
     return this.http.put(this.baseUrl + 'members/' + member.id + '/', body,
     {headers: this.httpHeaders});
   };
+
+  deleteMember(id) : Observable<any> {
+    return this.http.delete(this.baseUrl + 'members/' + id + '/',
+    {headers: this.httpHeaders});
+  };
 }
